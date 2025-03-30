@@ -1,40 +1,72 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Movie Explorer 🎬 
 
-First, run the development server:
+Este é um projeto de exploração de filmes que consome a API do TMDB (The Movie Database) para exibir filmes em cartaz, seus detalhes e permitir a pesquisa de títulos.
 
-```bash
+# Tecnologias Utilizadas 🚀
+
+Next.js (App Router) - Estrutura moderna para React
+
+TypeScript - Tipagem segura
+
+Tailwind CSS - Estilização rápida e eficiente
+
+Zustand - Gerenciamento de estado
+
+Axios - Requisições HTTP
+
+Material UI (Skeleton) - Animação de carregamento
+
+Radix Theme - Sistema de cores para temas claro e escuro
+
+# Configuração 🛠
+Para utilizar este projeto, você precisa da sua própria API Key e Token de Autenticação do TMDB.
+
+🔑 Obtendo suas credenciais
+Acesse o TMDB
+
+Crie uma conta e vá para Configurações > API
+
+Gere uma API Key (v3)
+
+Gere um Token de Autenticação (Bearer Token v4)
+
+# Como Rodar o Projeto 📌
+
+1️⃣ Clone o repositório
+
+git clone https://github.com/seu-usuario/movie-explorer.git
+
+cd movie-explorer
+
+2️⃣ Instale as dependências
+
+npm install
+# ou
+yarn install
+3️⃣ Configure as credenciais da API
+
+Crie um arquivo .env.local na raiz do projeto e adicione suas credenciais:
+
+NEXT_PUBLIC_TMDB_API_KEY=SUA_API_KEY_AQUI
+NEXT_PUBLIC_TMDB_BEARER_TOKEN=SUA_BEARER_TOKEN_AQUI
+
+⚠ Importante: Sem essas credenciais, as requisições à API do TMDB não funcionarão.
+
+4️⃣ Rode o projeto
+
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O projeto estará disponível em http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Funcionalidades 📷
+✔️ Exibição de filmes em cartaz
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✔️ Paginação para navegação entre filmes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✔️ Pesquisa de filmes
 
-## Learn More
+✔️ Exibição de detalhes do filme
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# Cubos_Challenge
->>>>>>> 127c370cede6ad2c598f8c71f6753cfc06248f0b
+✔️ Tema escuro e claro
