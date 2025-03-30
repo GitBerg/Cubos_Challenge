@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import { TopBar } from "@/components/Topbar";
+import { Footer } from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased w-full h-full`}> 
+        <Image src={'/backgropund-krists-luhaers-unsplash.png'} alt="logo" width={1920} height={1080} className="absolute top-0 left-0 z-[-1] h-1/2"/>
+        <div className="absolute top-0 left-0 z-[-1] w-full h-full bg-linear-to-t from-[var(--color-mask)] from-60% to-white/10 "></div>
+        <TopBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
